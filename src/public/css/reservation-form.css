@@ -1,0 +1,280 @@
+/* =========================
+   全体
+========================= */
+.reservation-preview-container {
+  max-width: 900px;
+  margin: 40px auto 80px;
+  padding: 0 16px;
+}
+
+.reservation-form {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.page-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.help-text {
+  font-size: 14px;
+  color: #666;
+  margin-top: 6px;
+}
+
+/* =========================
+   ヘッダー
+========================= */
+.reservation-header {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.reservation-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.flyer-area {
+  margin: 16px 0;
+}
+
+.flyer-area img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.reservation-message {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* =========================
+   フォーム共通
+========================= */
+.reservation-body {
+  margin-top: 32px;
+}
+
+.form-row {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.required {
+  color: #e53935;
+  margin-left: 4px;
+}
+
+.text-input,
+.select-input,
+.textarea-input,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+}
+
+.textarea-input {
+  resize: vertical;
+}
+
+.text-input:focus,
+.select-input:focus,
+.textarea-input:focus,
+select:focus {
+  outline: none;
+  border-color: #6ec6e8;
+}
+
+/* =========================
+   券種・枚数
+========================= */
+.ticket-type-list {
+  margin-top: 12px;
+}
+
+.ticket-type-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+.ticket-type-name {
+  font-size: 15px;
+}
+
+.ticket-price {
+  color: #555;
+  font-size: 14px;
+}
+
+.quantity-select {
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+/* =========================
+   支払方法
+========================= */
+.radio-item {
+  font-size: 15px;
+}
+
+.radio-item input {
+  margin-right: 6px;
+}
+
+/* =========================
+   送信ボタン
+========================= */
+.form-actions {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.submit-button {
+  background: #2c7be5;
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #1b5fc6;
+}
+
+
+.page-back-area {
+  text-align: center;
+  margin: 32px 0 16px;
+}
+
+.page-back-link {
+  color: #6ec6e8;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.page-back-link:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   フッター
+========================= */
+.reservation-footer {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.reservation-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.reservation-form {
+  background: #fff;
+  border-radius: 12px;
+}
+
+/* =========================
+   公演日時 専用デザイン
+========================= */
+.schedule-select:focus {
+  border-color: #2c7be5;
+  box-shadow: 0 0 0 3px rgba(44, 123, 229, 0.15);
+  outline: none;
+
+  /* =========================
+     チラシ表示
+  ========================= */
+
+  .flyer-wrapper {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    /* スマホ対応 */
+  }
+
+  .flyer-area {
+    width: 48%;
+  }
+
+  .flyer-area img {
+    width: 100%;
+    aspect-ratio: 1 / 1.414;
+    /* A4縦比率 */
+    object-fit: contain;
+    border: 1px solid #ddd;
+    background: #fff;
+  }
+}
+
+/* =========================
+     チラシ表示
+  ========================= */
+
+.flyer-wrapper {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin: 30px 0;
+  flex-wrap: wrap;
+  /* スマホ対応 */
+}
+
+.flyer-area {
+  width: 48%;
+}
+
+.flyer-area img {
+  width: 100%;
+  aspect-ratio: 1 / 1.414;
+  /* A4縦比率 */
+  object-fit: contain;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.flyer-upload-area {
+  display: flex;
+  gap: 24px;
+  margin-top: 12px;
+}
+
+.flyer-upload-box {
+  width: 48%;
+}
+
+.preview-img {
+  width: 100%;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+}

@@ -1,0 +1,131 @@
+.event-create-container {
+  max-width: 720px;
+  margin: 80px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 28px;
+  letter-spacing: 0.08em;
+}
+
+.event-form .form-group {
+  margin-bottom: 28px;
+}
+
+.event-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.event-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.url-input-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.url-base {
+  background: #f3f3f3;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #555;
+  white-space: nowrap;
+}
+
+.url-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.url-btn {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  background: #fff;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.url-btn.active {
+  background: #6ec6e8;
+  color: #fff;
+  border-color: #6ec6e8;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 32px;
+  padding: 12px;
+  background: #6ec6e8;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* =========================
+   バリデーションエラー表示
+========================= */
+.error-box {
+  background: #fff4f4;
+  border: 1px solid #f5c2c2;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 28px;
+}
+
+.error-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.error-list li {
+  color: #c0392b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* wrapper */
+.event-create-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 戻るリンク（カード外） */
+.below-link {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.below-link a {
+  font-size: 14px;
+  color: #6ec6e8;
+  text-decoration: none;
+}
+
+.below-link a:hover {
+  text-decoration: underline;
+}

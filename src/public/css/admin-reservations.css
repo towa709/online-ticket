@@ -1,0 +1,446 @@
+/* =========================
+   全体
+========================= */
+
+.admin-reservations-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px 60px;
+}
+
+.page-title {
+  font-size: 24px;
+  margin-bottom: 28px;
+  font-weight: bold;
+}
+
+/* =========================
+   空状態
+========================= */
+
+.empty-text {
+  padding: 40px 0;
+  text-align: center;
+  color: #666;
+}
+
+/* =========================
+   テーブル
+========================= */
+
+.reservations-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.reservations-table th,
+.reservations-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e6e9ef;
+  font-size: 14px;
+}
+
+.reservations-table thead {
+  background: #f4f7fb;
+}
+
+.reservations-table tbody tr {
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.reservations-table tbody tr:hover {
+  background: #f9fbff;
+}
+
+.center {
+  text-align: center;
+}
+
+.sub-text {
+  font-size: 12px;
+  color: #777;
+}
+
+/* =========================
+   券種
+========================= */
+
+.ticket-breakdown {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+/* =========================
+   ステータス
+========================= */
+
+.status-label {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-purchased {
+  background: #e7f4ff;
+  color: #1e6bb8;
+}
+
+.status-cancelled {
+  background: #eee;
+  color: #666;
+}
+
+/* =========================
+   モーダル
+========================= */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 520px;
+}
+
+.modal-title {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.modal-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.btn-danger {
+  background: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  margin-left: 8px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  background: #ccc;
+  cursor: pointer;
+}
+
+/* =========================
+   戻るリンク
+========================= */
+
+.back-link-area {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.back-link-area a {
+  color: #6ec6e8;
+  text-decoration: none;
+}
+
+.back-link-area a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   レスポンシブ
+========================= */
+
+@media (max-width: 900px) {
+
+  .reservations-table th,
+  .reservations-table td {
+    font-size: 13px;
+    padding: 10px 8px;
+  }
+}
+
+@media (max-width: 640px) {
+  .reservations-table {
+    font-size: 12px;
+  }
+
+  .page-title {
+    font-size: 20px;
+  }
+}
+
+.reservations-actions {
+  margin-bottom: 16px;
+  text-align: right;
+}
+
+.btn-export {
+  background: #6ec6e8;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn-export:hover {
+  opacity: 0.85;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.search-form input,
+.search-form button {
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+/* =========================
+   確認モーダル
+========================= */
+
+.confirm-box {
+  max-width: 380px;
+  text-align: center;
+}
+
+.confirm-text {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+  background: #e7f4ff;
+  color: #1e6bb8;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+}
+
+/* 印刷ボタン */
+.btn-print {
+  background: #4caf50;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.btn-print:hover {
+  opacity: 0.85;
+}
+
+/* 印刷時に不要なものを非表示 */
+@media print {
+
+  .reservations-actions,
+  .back-link-area,
+  .detail-button,
+  .btn-print,
+  .btn-export {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  .admin-reservations-container {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .reservations-table {
+    box-shadow: none;
+  }
+}
+
+
+/* =========================
+   詳細ボタン
+========================= */
+
+.detail-button {
+  background: #6ec6e8;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.detail-button:hover {
+  background: #57b8dc;
+  transform: translateY(-1px);
+}
+
+.detail-button:active {
+  transform: scale(0.98);
+}
+
+/* =========================
+   ページネーション
+========================= */
+
+.pagination-area {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-area nav {
+  display: flex;
+  gap: 6px;
+}
+
+.pagination-area .page-link,
+.pagination-area span {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+}
+
+.pagination-area .active span {
+  background: #6ec6e8;
+  color: #fff;
+  border-color: #6ec6e8;
+}
+
+/* =========================
+   印刷時 折り返し防止
+========================= */
+
+@media print {
+
+  .reservations-table td,
+  .reservations-table th {
+    white-space: nowrap;
+    /* 折り返さない */
+  }
+
+  /* 特に名前とメールは固定 */
+  .reservations-table td:nth-child(3),
+  .reservations-table td:nth-child(4) {
+    white-space: nowrap;
+  }
+
+}
+
+.edit-link {
+  margin-left: 10px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.edit-link:hover {
+  text-decoration: underline;
+}
+
+.cancel-button {
+  margin-left: 10px;
+  background: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cancel-button:hover {
+  background: #c9302c;
+}
+
+.action-cell {
+  white-space: nowrap;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.search-form input,
+.search-form select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.search-form button {
+  background: #6ec6e8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.status-label:not(.status-purchased):not(.status-cancelled) {
+  background: #fff3cd;
+  color: #856404;
+}

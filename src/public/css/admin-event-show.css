@@ -1,0 +1,62 @@
+.event-manage-container {
+  max-width: 800px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.page-title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
+/* メニュー全体 */
+.manage-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* 各ボタン */
+.manage-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 110px;
+  padding: 20px;
+  background: #f8fafb;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+/* タイトル */
+.manage-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* 説明文 */
+.manage-desc {
+  font-size: 13px;
+  color: #666;
+}
+
+/* ホバー時 */
+.manage-item:hover {
+  background: #eef8fc;
+  border-color: #6ec6e8;
+  box-shadow: 0 6px 14px rgba(110, 198, 232, 0.25);
+  transform: translateY(-2px);
+}
+
+/* ホバー時の文字色 */
+.manage-item:hover .manage-title {
+  color: #2c88b5;
+}

@@ -1,0 +1,72 @@
+/* 全体ラッパー */
+.admin-events-wrapper {
+  max-width: 1000px;
+  margin: 80px auto 60px;
+}
+
+/* ページタイトル（カード外） */
+.page-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 32px;
+  letter-spacing: 0.08em;
+}
+
+/* カード本体 */
+.admin-events-container {
+  background: #fff;
+  padding: 56px;
+  /* ← 中も広めに */
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* 空状態 */
+.empty-text {
+  text-align: center;
+  color: #666;
+  font-size: 15px;
+}
+
+/* 公演リスト */
+.event-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.event-item {
+  padding: 18px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.event-item:last-child {
+  border-bottom: none;
+}
+
+.event-item a {
+  font-size: 17px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.event-item a:hover {
+  text-decoration: underline;
+}
+
+/* 戻るリンク */
+.back-link-wrapper {
+  margin-top: 28px;
+  text-align: center;
+}
+
+.back-link {
+  color: #6ec6e8;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}

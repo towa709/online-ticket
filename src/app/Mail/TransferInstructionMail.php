@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Mail;
+
+use App\Models\Order;
+use Illuminate\Mail\Mailable;
+
+class TransferInstructionMail extends Mailable
+{
+  public $order;
+
+  public function __construct(Order $order)
+  {
+    $this->order = $order;
+  }
+
+  public function build()
+  {
+    return $this
+      ->subject('【ご入金のお願い】ご予約受付のお知らせ')
+      ->view('emails.transfer_instruction');
+  }
+}

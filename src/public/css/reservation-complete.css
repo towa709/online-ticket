@@ -1,0 +1,71 @@
+/* =========================
+   完了画面 全体
+========================= */
+
+.reservation-complete-container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 80px 20px 40px;
+  text-align: center;
+}
+
+/* タイトル */
+.complete-title {
+  font-size: 26px;
+  margin-bottom: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* メイン文言 */
+.complete-message {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #444;
+}
+
+/* 補足文言 */
+.complete-sub-message {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* =========================
+   フッターエリア
+========================= */
+
+.complete-footer {
+  margin-top: 60px;
+}
+
+/* 予約を続けるリンク */
+.continue-link {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: #6ec6e8;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.continue-link:hover {
+  background-color: #58b5da;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   レスポンシブ
+========================= */
+
+@media (max-width: 640px) {
+  .reservation-complete-container {
+    padding-top: 60px;
+  }
+
+  .complete-title {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,99 @@
+/* ヘッダー */
+body {
+  background-color: #FFF9F8;
+  color: #4A4A4A;
+}
+
+.header {
+  background: linear-gradient(90deg,
+      #FADADD 0%,
+      #FFFFFF 50%,
+      #FADADD 100%);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.header-title {
+  color: #4A4A4A;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.header-right .logout-button {
+  background-color: #6EC6E8;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.header-right .logout-button:hover {
+  background-color: #5AB5D8;
+}
+
+/* レイアウト */
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+/* エラーメッセージ */
+.error {
+  color: #d93025;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-logo {
+  width: 70px;
+  height: 70px;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.header-link:hover .header-title {
+  opacity: 0.8;
+}
+
+/* PC */
+@media screen and (min-width: 1400px) {
+  .header-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header-title {
+    font-size: 22px;
+  }
+}
+
+/* タブレット */
+@media screen and (max-width: 850px) {
+  .header-logo {
+    width: 56px;
+    height: 56px;
+  }
+
+  .header-title {
+    font-size: 18px;
+  }
+}

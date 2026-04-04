@@ -1,0 +1,119 @@
+/* =========================
+   劇団情報管理ページ
+========================= */
+
+.organization-container {
+  max-width: 720px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.organization-title {
+  text-align: center;
+  font-size: 32px;
+  color: #6EC6E8;
+  margin-bottom: 40px;
+  letter-spacing: 0.08em;
+}
+
+/* フォーム */
+.organization-form .form-group {
+  margin-bottom: 24px;
+}
+
+.organization-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #4A4A4A;
+}
+
+.organization-form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.organization-form input:focus {
+  outline: none;
+  border-color: #6EC6E8;
+}
+
+/* 保存ボタン（分かりやすく） */
+.btn-save {
+  display: block;
+  width: 80%;
+  margin-left: 30px;
+  margin-top: 40px;
+  padding: 14px;
+  background-color: #6EC6E8;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-save:hover {
+  background-color: #5AB5D8;
+  transform: translateY(-2px);
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+
+/* コンテナ下のリンク */
+.below-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.below-link a {
+  font-size: 14px;
+  color: #6EC6E8;
+  text-decoration: none;
+}
+
+.below-link a:hover {
+  text-decoration: underline;
+}
+
+/* 全体ラッパー */
+.organization-wrapper {
+  max-width: 720px;
+  margin: 80px auto 60px;
+}
+
+/* カード本体 */
+.organization-container {
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* 下の戻るリンク */
+.below-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.below-link a {
+  font-size: 14px;
+  color: #6EC6E8;
+  text-decoration: none;
+}
+
+.below-link a:hover {
+  text-decoration: underline;
+}

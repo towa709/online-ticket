@@ -1,0 +1,109 @@
+body {
+  background-color: #FFF9F8;
+}
+
+.admin-index-container {
+  max-width: 720px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.admin-title {
+  font-size: 60px;
+  font-weight: 500;
+  color: #6EC6E8;
+  letter-spacing: 0.18em;
+  margin-bottom: 24px;
+  font-family: 'Shippori Mincho', serif;
+  letter-spacing: 0.12em;
+}
+
+
+.admin-welcome {
+  color: #4A4A4A;
+  line-height: 1.8;
+  margin-bottom: 50px;
+  font-size:  20px
+}
+
+.admin-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.admin-menu-item {
+  width: 100%;
+  max-width: 420px;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  text-decoration: none;
+  color: #4A4A4A;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.admin-menu-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  color: #6EC6E8;
+}
+
+/* =========================
+   PC（1400px〜1540px）
+========================= */
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+  .admin-index-container {
+    max-width: 860px;
+    margin: 120px auto;
+  }
+
+  .admin-title {
+    font-size: 72px;
+    margin-bottom: 32px;
+  }
+
+  .admin-welcome {
+    font-size: 22px;
+    margin-bottom: 64px;
+  }
+
+  .admin-menu-item {
+    max-width: 520px;
+    padding: 28px;
+    font-size: 18px;
+  }
+}
+
+/* =========================
+   タブレット（768px〜850px）
+========================= */
+@media screen and (min-width: 768px) and (max-width: 850px) {
+  .admin-index-container {
+    margin: 60px auto;
+    padding: 0 16px;
+  }
+
+  .admin-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .admin-welcome {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .admin-menu {
+    gap: 20px;
+  }
+
+  .admin-menu-item {
+    max-width: 100%;
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+

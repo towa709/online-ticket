@@ -1,0 +1,113 @@
+/* ===== 全体 ===== */
+.ticket-type-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* ===== テーブル ===== */
+.ticket-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.ticket-table th,
+.ticket-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.ticket-table th {
+  background: #f0f4f8;
+  font-weight: bold;
+}
+
+.ticket-table td {
+  background: #fff;
+}
+
+.ticket-table tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+/* 空表示 */
+.ticket-table .empty {
+  padding: 20px;
+  color: #777;
+}
+
+/* ===== セクションタイトル ===== */
+.section-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* ===== 追加フォーム ===== */
+.ticket-form {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.ticket-form .form-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.ticket-form select,
+.ticket-form input {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.ticket-form select {
+  min-width: 180px;
+}
+
+.ticket-form input[type="text"] {
+  width: 160px;
+}
+
+.ticket-form input[type="number"] {
+  width: 120px;
+}
+
+.ticket-form button {
+  background: #2c7be5;
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ticket-form button:hover {
+  opacity: 0.85;
+}
+
+/* ===== 戻るリンク ===== */
+.below-link {
+  text-align: center;
+  margin: 30px 0 60px;
+}
+
+.below-link a {
+  color: #6ec6e8;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.below-link a:hover {
+  text-decoration: underline;
+}

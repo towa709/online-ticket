@@ -1,0 +1,119 @@
+/* 全体コンテナ */
+.event-show-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ページタイトル */
+.page-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* 各セクション */
+.section-block {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+/* セクションヘッダー */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.section-header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* 管理リンク */
+.edit-link,
+.manage-link {
+  color: #6ec6e8;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.edit-link:hover,
+.manage-link:hover {
+  text-decoration: underline;
+}
+
+/* 情報テーブル */
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.info-table th {
+  background: #f0f4f8;
+  width: 180px;
+}
+
+/* セクション説明 */
+.section-note {
+  color: #555;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* ★wrapper（新規追加） */
+.event-edit-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 既存：中身だけ担当 */
+.event-show-container {
+  margin: 0 auto;
+}
+
+/* ★戻るリンク（新規公演登録と同じ） */
+.below-link {
+  text-align: center;
+  margin: 30px 0 60px;
+}
+
+.below-link a {
+  color: #6ec6e8;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.below-link a:hover {
+  text-decoration: underline;
+}
+
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.summary-table th,
+.summary-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.summary-table th {
+  background: #f0f4f8;
+}
+
+.summary-table .center {
+  font-size: 18px;
+}
