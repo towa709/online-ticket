@@ -31,13 +31,13 @@ docker-compose up -d --build
 
 例：
 
-* Linux / WSL
+### Linux / WSL
 
 ```bash
 /home/ユーザー名/coachtech/online-ticket
 ```
 
-* Windows
+### Windows
 
 ```bash
 C:\Users\ユーザー名\coachtech\online-ticket
@@ -45,7 +45,7 @@ C:\Users\ユーザー名\coachtech\online-ticket
 
 ---
 
-### Laravel環境構築
+## Laravel環境構築
 
 1. PHPコンテナへ入る
 
@@ -88,10 +88,10 @@ php artisan key:generate
 php artisan migrate
 ```
 
-7. シーディング実行（必要な場合）
+7. 初期データを含めて環境構築する場合
 
 ```bash
-php artisan db:seed
+php artisan migrate:fresh --seed
 ```
 
 8. ストレージリンク作成
@@ -102,7 +102,22 @@ php artisan storage:link
 
 ---
 
-### Permission denied エラーが出る場合
+## MailHog コンテナ名競合について
+
+他プロジェクトですでに MailHog を使用している場合、
+コンテナ名競合エラーが発生することがあります。
+
+その場合は `docker-compose.yml` の MailHog 設定を変更してください。
+
+```yml
+mailhog:
+    image: mailhog/mailhog
+    container_name: online-ticket-mailhog
+```
+
+---
+
+## Permission denied エラーが出る場合
 
 ```bash
 docker-compose exec php bash
@@ -114,6 +129,18 @@ chmod -R 775 storage bootstrap/cache
 
 ## URL
 
-* 開発環境：http://localhost
-* phpMyAdmin：http://localhost:8080
-* MailHog：http://localhost:8025
+- 開発環境：http://localhost/index
+- phpMyAdmin：http://localhost:8080
+- MailHog：http://localhost:8025
+
+---
+
+## 使用技術
+
+- Laravel 12
+- PHP 8.4
+- MySQL 8.0
+- Docker / docker-compose
+- Nginx
+- MailHog
+- phpMyAdmin
